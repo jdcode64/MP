@@ -2,6 +2,7 @@ import sqlite3
 import psycopg
 import os
 import bcrypt
+import streamlit as st
 from psycopg.rows import dict_row
 
 from config import DATABASE_URL, SQLITE_DB_PATH
