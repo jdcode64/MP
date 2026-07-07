@@ -1,0 +1,6 @@
+streamlit
+psycopg[binary]>=3.1.18
+requests
+bcrypt
+python-dotenv
+pandas
