@@ -6,6 +6,8 @@ from psycopg.rows import dict_row
 
 from config import DATABASE_URL, SQLITE_DB_PATH
 
+DATABASE_URL = st.secrets.get("DATABASE_URL")
+
 def get_connection():
     if DATABASE_URL:
         return psycopg.connect(DATABASE_URL, row_factory=dict_row)
